@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="babystyle.css"/>
+<script src = "getalls.js"></script>
+<script src = "loadXMLDocs.js"></script>
+<script src = "addSths.js"></script>
+</head>
+
+
+<body onload="loadXMLDoc('babyprofile.xml')">
+<div id="welcome">
+	<h1 class="welcome">Welcome~~</h1>
+	<p class="date" id="date"> today is sunday </p>
+
+	<script type="text/javascript">
+	var d=new Date();
+	var weekday= new Array(7);
+
+	weekday[0]="Sunday";
+	weekday[1]="Monday";
+	weekday[2]="Tuesday";
+	weekday[3]="Thursday";
+	weekday[4]="Wednesday";
+	weekday[5]="Friday";
+	weekday[6]="Saturday";
+
+	var w= weekday[d.getDay()];
+	var y= d.getFullYear();
+	var m= d.getMonth();
+	var dd= d.getDate();
+
+	var txt ="today is "+m+", "+dd+", " +y+", "+w;
+	document.getElementById("date").innerHTML=txt;
+	</script>
+</div>
+<div id="menu">
+	<ul class="menu">
+	<li class="menu"><a class="menu" href="#babyprofile">baby profile</a></li>
+	<li class="menu"><a class="menu" href="#babyshow">baby show</a></li>
+	<li class="menu"><a class="menu" href="#babytree">baby tree</a></li>
+	<li class="menu"><a class="menu" href="#login">login</a></li>
+	</ul>
+
+</div>
+
+<div id="basicInfo">
+	<a name="babyprofile">
+	<div class="columHead"><h3 class="columHead">Baby profile</h3>	</div>
+	</a>
+	<div id="profile">
+	<img class="headportrait"  src="IMG_4796.jpg" />
+	<table id="bInfo" border="1">
+	<tr>
+		<th>Name:</th>
+		<td>emp</td>
+	</tr>
+
+	<tr>
+		<th>Gender:</th>
+		<td>emp</td>
+	</tr>
+	<tr>
+		<th>Age:</th>
+		<td>emp</td>
+	</tr>
+	<tr>
+		<th>Hight:</th>
+		<td>emp</td>
+	</tr>
+	<tr>
+		<th>Weight:</th>
+		<td>emp</td>
+	</tr>
+
+	<tr>
+		<th>Description:</th>
+		<td>emp</td>
+	</tr>
+	</table>
+
+	<textarea class="monthly" rows="5" cols="60">About baby you should know in this month:blablabla~~~~~blablabla~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</textarea>
+	</div>
+
+	<div id="social">
+	<form id="friends">
+	<h3>Friends</h3>
+	<ul>
+		<li> linlin</li>
+		<li> youyou</li>
+		<li> yiyi</li>
+		<li> lele</li>
+	</ul>
+	</form>
+	<form id="visitors">
+	<h3>Visitors</h3>
+	</form>
+	</div>
+</div>
+<div id="babyshow">
+	<a  name="babyshow">
+	<div class="columHead">
+	<h3 class="columHead">Baby show</h3>
+	</div>
+	</a>
+	<div id="pics">
+	<img class ="pictures" src="IMG_4790.JPG" />
+	<img class ="pictures" src="IMG_4802.JPG" />
+	<img class ="pictures" src="IMG_4851.JPG" />
+	<img class ="pictures" src="IMG_5096.JPG" />
+	<img class ="pictures" src="IMG_5127.JPG" />
+	</div>
+	<div class="container">
+	<div id="videolist">
+	<ul id="vlist">
+	</ul>
+	</div>
+	<div id="videos">
+	<embed id="videoEmbd" src="http://player.youku.com/player.php/sid/XMzI2NTc4NTMy/v.swf" 
+	width="320" height="240"
+	type="application/x-shockwave-flash">
+	</embed>
+	</div>
+	<div id="addvideo">
+	<form>
+		video name:<input type="text" id="videoname" /> video href:<input type="text" id="videohref"/> <input type="button" onclick="addVideo()" value="Add" />
+	</form>
+	</div>
+	</div>
+	<div id="commentslist">
+		<ul id="commentslist">
+		</ul>
+	</div>
+	<div id="addcomments">
+	<form>
+		<input type="text" id="newcomments"/>
+		<input type="button" onclick="addComment()" value="Add comment"/>
+	</form>
+	</div>	
+
+
+</div>
+
+<div id="babytree"> 
+	<a name="babytree">
+	<div class="columHead">
+	<h3 class="columHead">Baby tree</h3>
+	</div>
+	</a>
+
+
+	<div id="growtheditor">
+
+	<form id="babytree" action="setData.php" method="get"> 
+	<select id ="growthSele" name="selec">
+	<option value="1">Height</option>
+	<option value="2">Weight</option>
+	<option value="3">Words</option>
+	<option value="4">Action</option>
+	<option value="5">Foods</option>
+	<option value="6">Others</option>
+	</select>
+	<br/>
+
+	<input type="text" id="mytext" name="growth"/>
+	<input type="submit" value="Submit"/>
+	<br/><br/>
+	</form>
+	</div>
+
+	<div id="timecapsule">
+
+	<form>
+	<input type="button" value="<<"/>
+	<select id="mysele" onchange="showData(this.value)">
+	<option value="2015-08-03">2015-08-03</option>
+	<option value="2015-08-02">2015-08-02</option>
+	<option value="2015-08-01">2015-08-01</option>
+	</select>
+	
+	<input type="button" value=">>"/>
+	<input type="button"  value="test"/>
+	</form>
+
+	<table id="showbox" border="1">
+	<tr>
+		<th align="left">Time</th>
+		<td>2015-08-03</td>
+	</tr>
+	<tr>
+		<th align="left">Height</th>
+		<td>90 cm</td>
+	</tr>
+	<tr>
+		<th align="left">Weight</th>
+		<td>11.5 kg</td>
+	</tr>
+	<tr>
+		<th align="left">Behaviors</th>
+		<td>she wake up and drink water at PM 5.00 because she is thirsty since fall asleep am:600 yesterday.</td>	
+	</tr>
+	<tr>
+		<th align="left">Pictures</th>
+		<td>a picture</td>
+	</tr>
+	<tr>
+		<th  align="left">Videos</th>
+		<td>a vedio</td>
+	</tr>
+	<tr>
+		<th  align="left">Description</th>
+		<td>she is a big girl now</td>
+	</tr>
+	</table>
+	
+	</div>
+</div>
+
+<div id="footer">
+	<p class="footer">Copyright reserved.</p>
+</div>
+
+</body>
+</html>
