@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<all>
+<basicInfo>
+	<name>Julie</name>
+	<gender>Girl</gender>
+	<age>23 momths</age>
+	<height>90 cm</height>
+	<weight>11.5 kg</weight>
+	<description>Julie is born at 2013</description>
+</basicInfo>
+<videolist>
+	<video>
+		<vname>a video about the original of universe </vname>
+		<vlink></vlink>
+	</video>
+
+	<video>
+		<vname>another video</vname>
+		<vlink></vlink>
+	</video>
+</videolist>
+<commentslist>
+	<comment>here is one comment</comment>
+	<comment>here is another comment</comment>
+</commentslist>
+</all>

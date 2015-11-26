@@ -1,0 +1,270 @@
+html 
+{
+	margin:0px 150px 0px 150px;
+	padding:0px 50px 0px 50px; 
+}
+
+
+
+div#welcome,div#menu,div#basicInfo,div#babyshow,div#babytree,div#footer
+{
+	outline:gray dotted;
+}
+div#profile,div#social,form#friends,form#visitors,div#pics,div#videos,div#videolist,div#commentslist
+{
+	outline:purple solid;
+}
+
+div.columHead
+{
+	height:25px;
+	width:900px;
+	background-color:purple;
+}
+
+h3.columHead
+{
+	color:white;
+	font-weight:bold;
+	text-align:center;
+}
+
+div#welcome
+{
+	height:100px;
+	width:900px;
+	background-color:purple;
+}
+h1.welcome
+{
+	color: white;
+	font-style: italic;
+	font-size: 40px;
+	font-weight: bold;
+}
+p.date
+{
+	color:white;
+}
+
+div#menu
+{
+	height:30px;
+	width:900px;
+}
+
+
+ul.menu
+{
+	list-style-type:none;
+	margin:20px 0px 20px 0px;
+	padding:0px;
+	position:relative;
+	top:5px;
+	left:0px;
+}
+
+
+li.menu
+{
+	float:left;
+}
+a.menu:link,a.menu:visited
+{
+	display:block;
+	width:225px;
+	font-weight:bold;
+	color:#FFFFFF;
+	background-color:purple;
+	text-align:center;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+
+a.menu:hover,a.menu:active
+{
+	background-color:gray;
+}
+
+
+
+div#basicInfo
+{
+	height:375px;
+	width:900px;
+}
+div#profile
+{
+	height:330px;
+	width:560px;
+	margin:10px;
+	float:left;
+}
+table#bInfo
+{
+	height:150px;
+	width:380px;
+	margin:10px 10px 10px 0px;
+	float:left;
+}
+div#social
+{
+	height:330px;
+	width:300px;
+	margin:10px;
+	float:left;
+}
+textarea.monthly
+{
+	height:150px;
+	width:540px;
+	margin:0px 10px 10px 10px;
+	padding:0px;
+	text-indent:50px;
+	font-style:italic;
+	float:left;
+}
+form#friends
+{	
+	height:165px;
+	width:300px;
+	margin:0px;
+	float:left;
+}
+form#visitors
+{	
+	height:165px;
+	width:300px;
+	margin:0px;
+	float:left;
+}
+
+div#babyshow
+{
+	height:510px;
+	width:900px;
+	outline:gray dotted;
+}
+div#pics
+{
+	height:150px;
+	width:880px;
+	padding:10px;
+}
+div#videos
+{
+	height:240px;
+	width:320px;
+	margin:0px;
+	padding:5px 15px 5px 15px;
+	float:left;
+}
+div.container
+{
+	height:300px;
+	width:600px;
+	float:left;
+}
+div#videolist
+{
+	height:250px;
+	width:250px;
+	margin:0px;
+	padding:0px;
+	float:left;
+}
+div#addvideo
+{
+	height:20px;
+	width:560px;
+	padding:15px 20px 15px 20px;
+	float:left;
+	outline:silver solid;
+}
+div#commentslist
+{
+	height:250px;
+	width:280px;
+	margin:0px;
+	padding:0px 0px 0px 20px;
+	float:left;
+}
+div#addcomments
+{
+	height:20px;
+	width:260px;
+	padding:15px 20px 15px 20px;
+	float:left;
+	outline:silver solid;
+	
+}
+
+
+div#babytree
+{
+	height:400px;
+	width:900px;
+	background-image:url(tree.jpg);
+	background-size:400px 400px;
+	background-position:100% 0%;
+	background-repeat:no-repeat;
+}
+div#growtheditor
+{
+	width:480px;
+	height:50px;
+	margin:10px 20px 10px 20px;
+	clear:both;
+	outline:silver solid;
+        float:left;
+}
+div#timecapsule
+{
+	width:480px;
+	height:280px;
+	margin:10px 20px 10px 20px;
+	clear:both;
+	outline:silver solid;
+	float:left;
+}
+form#babytree
+{
+
+}
+
+
+div#footer
+
+{
+	height:30px;
+	width:900px;
+	clear:both;
+	background-color:purple;
+}
+
+p.footer
+{
+	color:white;
+	text-align:left;
+}
+
+
+img.headportrait
+{
+	float:left;
+	boder:1px solid gray;
+	margin:10px 10px 10px 10px;
+	height:150px;
+	width:150px;
+}
+
+img.pictures
+{
+	height:130px;
+	width:100px;
+	margin:10px 5px 10px 5px;
+	position:relative;
+	-webkit-transition:width 2s, height 2s;
+}
+
+td.desc {overflow:scroll}
